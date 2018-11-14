@@ -1,0 +1,5 @@
+---
+- name: "restart_{{ upstart_name }}_service"
+  service:
+    name: "{{ upstart_name }}"
+    state: restarted

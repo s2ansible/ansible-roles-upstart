@@ -1,0 +1,5 @@
+description "{{ upstart_description }}"
+start on {{ upstart_start_on }}
+stop on {{ upstart_stop_on }}
+exec {{ upstart_exec }}
+{% if upstart_respawn %}respawn{% endif %}

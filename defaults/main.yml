@@ -1,0 +1,7 @@
+---
+upstart_name: template
+upstart_description: 'Nondescript Template'
+upstart_start_on: "runlevel [2345]"
+upstart_stop_on: "runlevel [!2345]"
+upstart_respawn: yes
+upstart_exec: 'echo Nothing defined to execute'
