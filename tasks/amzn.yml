@@ -1,10 +1,12 @@
 ---
-- template:
+- name: Create configuration
+  template:
     src: upstart.conf.j2
     dest: "/etc/init/{{ upstart_name }}.conf"
   notify: "restart_{{ upstart_name }}_service"
 
-- service:
+- name: Start service
+  service:
     name: "{{ upstart_name }}"
     enabled: yes
     state: started

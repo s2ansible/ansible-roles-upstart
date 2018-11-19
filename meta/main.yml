@@ -1,6 +1,7 @@
 galaxy_info:
   role_name: upstart
   author: youyo
+  company: heptagon inc.
   description: set upstart task
   license: MIT
   min_ansible_version: 2.4
